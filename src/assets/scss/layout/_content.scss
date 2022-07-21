@@ -1,0 +1,72 @@
+.heading {
+    background-color: $bg-color;
+    color: white;
+}
+
+.view-details-bg {
+    background-image: url(/assets/img/city.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+    @include media-breakpoint-down(sm) {
+        height: 450px;
+    }
+}
+
+.view-details {
+    color: white;
+    clip-path: polygon(0 0, 60% 0, 48% 100%, 0% 100%);
+
+    @include media-breakpoint-down(md) {
+        clip-path: none;
+    }
+
+   
+}
+.details-container {
+    
+    width: 50%;
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+
+.details-border-bottom {
+    border-bottom: 4px solid $border-bottom-color;
+}
+
+.border-top {
+    border-top: 2px solid gray;
+}
+
+.bg-text-color {
+    color: $secondary;
+}
+
+.sm-text-color {
+    color: $primary;
+}
+
+.welcome-border-bottom {
+    background-color: $primary;
+    height: 7px;
+    width: 300px;
+}
+
+.video-box {
+    width: 300px;
+    height: 150px;
+    background-color: gray;
+}
+
+.more-button {
+    background-color: $primary;
+    color: white;
+}
+
+.avatar-circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}

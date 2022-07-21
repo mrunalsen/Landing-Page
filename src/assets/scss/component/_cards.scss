@@ -1,0 +1,43 @@
+// Card styles goes here
+.card {
+    border: none;
+    padding: 20px;
+}
+.info-cards{
+    position: absolute;
+    height: 100px;
+    top: auto;
+    bottom: 28px;
+    left: auto;
+    right: 28px;
+    z-index: 1;
+    @include media-breakpoint-down(lg) { 
+        flex-direction: column-reverse;
+     }
+    .info-card-1,.info-card-2,.info-card-3,.info-card-4,.info-card-5{
+    width: 150px;
+    }
+    .info-card-1{
+        background: $white;
+    }
+    .info-card-2{
+        background-image: url(/assets/img/consult.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    .info-card-3{
+        background-image: url(/assets/img/group.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    .info-card-4{
+        background-image: url(/assets/img/banking.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    .info-card-5{
+        background-image: url(/assets/img/tax.png);
+        background-position: center center;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,9 @@
+// Button styles goes here
+.slider-btn{
+    display: flex;
+    height: 84px;
+    align-items: center;
+    background: $primary;
+    padding: 4px;
+    color: $white;
+}

@@ -1,0 +1,25 @@
+// Navbar
+
+.navbar {
+    position: sticky;
+    top:0;
+    z-index: 111;
+}
+.navbar a {
+    text-decoration: none;
+    color: gray;
+    border-bottom: transparent 2px solid;
+
+    &:hover {
+        color: $dark;
+        border-bottom: 2px solid $primary;
+    }
+}
+
+.navlink-border {
+    border-left: 1px solid #cacaca;
+
+    @include media-breakpoint-down(lg) {
+        border: none;
+    }
+}
